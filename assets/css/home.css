@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.orange-color {
+    color: #ff662d;
+}
+
+.dark-color {
+    color: #303030
+}
+
+/* header */
+
+.head-logo>h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff662d;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+.head-logo>h1>b {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links>a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.nav-links>a.active,
+.nav-links>a:hover {
+    color: #ff662d;
+}
+
+a.contact-btn {
+    text-decoration: none;
+    background: #fff;
+    color: #303030;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    width: fit-content;
+}
+
+a.contact-btn:hover {
+    background: #ff662d;
+    color: #fff;
+}
+
+/* banner */
+.banner_sec {
+    padding: 0 50px;
+    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.banner_title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.banner_title>b {
+    line-height: 1.5em;
+}
+
+.banner_title>b:nth-child(1) {
+    font-size: 1em;
+}
+
+.banner_title>b:nth-child(2) {
+    font-size: 1.2em;
+}
+
+.banner_title>b:nth-child(3) {
+    font-size: 1.5em;
+}
+
+.banner_title>b>em {
+    font-style: normal;
+    color: #ff662d;
+}
+
+.banner_cont>p {
+    display: block;
+    margin: 0 0 40px;
+    padding: 0;
+}
+
+.actn-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #303030;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    margin-right: 25px;
+    border: 2px solid #303030;
+}
+
+.actn-btn.exp {
+    margin-right: 0;
+    background: #ff662d;
+}
+
+.actn-btn:hover,
+.actn-btn.exp:hover {
+    background: #fff;
+    color: #303030;
+}
+
+
+.banner_img {
+    justify-self: center;
+}
+
+.banner_img>img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 50px;
+    border: 2px solid #ff662d;
+}
+
+/* about */
+.about_sec {
+    padding: 100px 50px;
+    background: #000;
+    color: #fff;
+}
+
+.about_img {}
+
+.about_img>img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 50px;
+    border: 5px solid #ff662d;
+}
+
+.about_cont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.about_cont>h2 {
+    color: #ff662d;
+}
+
+.about_cont>p {
+    display: block;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.about_cont>p>b {
+    color: #ff662d;
+    font-weight: normal;
+}
+
+.common-head {
+    color: #303030;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    line-height: 1.5em;
+    text-transform: capitalize;
+}
+
+.skill .card {
+    width: 200px;
+}
+
+.skill .card-img-top {
+    width: 100px;
+    height: 100px;
+}
+
+/* project */
+.project_sec {
+    padding: 50px;
+    border-top: 2px dashed #cacaca;
+
+}
+
+.project_sec>h2 {
+    color: #303030;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+
+.project_cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.project_box {
+    border: 2px solid #ff662d;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.project_box>a {
+    color: #ff662d;
+}
+
+
+/* contact */
+.contact_sec {
+    border-top: 2px solid #303030;
+    padding: 50px;
+}
+
+.contact_sec>h2 {
+    color: #ff662d;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+/* footer */
+footer {
+    padding: 30px 50px;
+    text-align: center;
+}
